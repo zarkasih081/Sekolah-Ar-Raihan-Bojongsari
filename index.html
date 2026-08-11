@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SD Ar-Raihan Bojongsari mendidik anak-anak dengan pendekatan modern yang dilandasi nilai-nilai agama, membentuk generasi penerus yang berprestasi dan berbudi pekerti.">
+<meta property="og:title" content="SD Ar-Raihan Bojongsari - Sekolah Berbasis Karakter">
+<meta property="og:description" content="Tumbuh cerdas, berkarakter, dan berakhlak mulia bersama SD Ar-Raihan Bojongsari, Depok.">
+<meta property="og:type" content="website">
 <title>SD Ar-Raihan Bojongsari</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏫</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -25,13 +30,14 @@
       <li><a href="#ppdb">PPDB</a></li>
     </ul>
     <a href="#kontak" class="navcta">Hubungi Kami</a>
-    <button class="navtoggle">☰</button>
+    <button class="navtoggle" aria-label="Buka/Tutup Menu">☰</button>
   </div>
 </nav>
 
 <header class="hero">
+  <div class="hero-bg-glow"></div>
   <div class="wrap">
-    <div class="hero-grid">
+    <div class="hero-grid reveal">
       <div>
         <div class="hero-eyebrow">Sekolah Dasar · Bojongsari, Depok</div>
         <h1>Tumbuh cerdas, <em>berkarakter,</em> dan berakhlak mulia.</h1>
@@ -66,7 +72,7 @@
   </svg>
 </header>
 
-<section class="sambutan">
+<section class="sambutan reveal">
   <div class="wrap sambutan-grid">
     <div class="kepsek-frame">
       <div class="kepsek-label">FOTO KEPALA SEKOLAH</div>
@@ -80,13 +86,13 @@
   </div>
 </section>
 
-<section class="profil" id="profil">
+<section class="profil reveal" id="profil">
   <div class="wrap">
     <div class="profil-head">
       <div class="eyebrow">Profil Sekolah</div>
       <h2>Membangun generasi cerdas dan beradab</h2>
     </div>
-    <div class="cards3">
+    <div class="bento-profil">
       <div class="card">
         <div class="num">01 / Visi</div>
         <h3>Religius & Berprestasi</h3>
@@ -106,7 +112,7 @@
   </div>
 </section>
 
-<section class="program" id="program">
+<section class="program reveal" id="program">
   <div class="wrap">
     <div class="program-head">
       <div class="eyebrow">Program Unggulan</div>
@@ -138,7 +144,7 @@
   </div>
 </section>
 
-<section class="mading" id="mading">
+<section class="mading reveal" id="mading">
   <div class="wrap">
     <div class="mading-head">
       <h2>Berita & Info Terkini</h2>
@@ -167,9 +173,9 @@
   </div>
 </section>
 
-<section class="galeri" id="galeri">
+<section class="galeri reveal" id="galeri">
   <div class="wrap">
-    <div class="gal-grid">
+    <div class="bento-galeri">
       <div class="gal-item"><span>Kegiatan Belajar</span></div>
       <div class="gal-item"><span>Fasilitas Perpustakaan</span></div>
       <div class="gal-item"><span>Lab Komputer</span></div>
@@ -180,7 +186,7 @@
   </div>
 </section>
 
-<section class="ppdb" id="ppdb">
+<section class="ppdb reveal" id="ppdb">
   <div class="wrap ppdb-grid">
     <div class="ppdb-copy">
       <div class="eyebrow">PPDB 2026/2027</div>
@@ -197,7 +203,7 @@
   </div>
 </section>
 
-<section class="kontak" id="kontak">
+<section class="kontak reveal" id="kontak">
   <div class="wrap kontak-grid">
     <div>
       <div class="eyebrow" style="color:var(--primary-yellow);">Hubungi Kami</div>
@@ -218,10 +224,10 @@
         </li>
       </ul>
     </div>
-    <form onsubmit="event.preventDefault(); this.reset(); alert('Pesan berhasil terkirim! Tim kami akan segera menghubungi Anda.');">
-      <input type="text" placeholder="Nama Lengkap" required>
-      <input type="email" placeholder="Alamat Email atau No. WhatsApp" required>
-      <textarea placeholder="Tuliskan pertanyaan atau pesan Anda..." required></textarea>
+    <form action="https://formspree.io/f/ganti_dengan_id_formspree_anda" method="POST">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Alamat Email atau No. WhatsApp" required>
+      <textarea name="pesan" placeholder="Tuliskan pertanyaan atau pesan Anda..." required></textarea>
       <button type="submit">Kirim Pesan</button>
     </form>
   </div>
